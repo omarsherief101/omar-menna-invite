@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(180deg, #111, #000);
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 20px;
+}
+
+/* Envelope */
+.envelope {
+  margin-top: 120px;
+  position: relative;
+}
+
+.flap {
+  width: 220px;
+  height: 120px;
+  background: #e63946;
+  margin: auto;
+  position: relative;
+  border-radius: 6px;
+}
+
+.label {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 22px;
+  border: none;
+  background: #e63946;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Ticket */
+.ticket {
+  display: none;
+  margin-top: 30px;
+}
+
+/* Fade elements */
+.fade {
+  opacity: 0;
+}
+
+.highlight {
+  color: #e63946;
+}
+
+/* Route */
+.route {
+  margin: 30px 0;
+  position: relative;
+}
+
+#bus {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 22px;
+}
+
+/* Story */
+.line {
+  opacity: 0;
+  margin: 10px 0;
+}
+
+/* Glow effect */
+.glow {
+  color: #e63946;
+  text-shadow: 0 0 10px #e63946;
+}
+
+/* Confetti */
+.confetti {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background: red;
+  top: -10px;
+  animation: fall 3s linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}

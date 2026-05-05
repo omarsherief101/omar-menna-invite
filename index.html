@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Omar & Menna</title>
+
+<link rel="stylesheet" href="style.css" />
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- Sound -->
+<audio id="openSound" src="https://assets.mixkit.co/active_storage/sfx/2571/2571-preview.mp3"></audio>
+
+<div class="container">
+
+  <!-- Envelope -->
+  <div class="envelope" id="envelope">
+    <div class="flap"></div>
+    <div class="label">Cairo → Alexandria</div>
+    <button id="openBtn">Open Ticket</button>
+  </div>
+
+  <!-- Ticket -->
+  <div class="ticket" id="ticket">
+
+    <h1 class="fade">Long distance? Who???</h1>
+    <h2 class="fade highlight">Omar & Menna… we made it.</h2>
+
+    <div class="event fade">
+      <p>Our Engagement</p>
+      <p>22 May</p>
+    </div>
+
+    <div class="details fade">
+      <p><strong>Passenger:</strong> Omar & Menna</p>
+      <p><strong>Route:</strong> Cairo → Alexandria</p>
+      <p><strong>Departure:</strong> Long Distance Era</p>
+      <p><strong>Arrival:</strong> 22 May</p>
+      <p><strong>Status:</strong> Boarding Love</p>
+    </div>
+
+    <!-- Route -->
+    <div class="route">
+      <span>Cairo</span>
+
+      <svg width="300" height="50">
+        <path id="path" d="M10 25 L290 25"
+              stroke="white"
+              stroke-width="2"
+              stroke-dasharray="6 6"
+              fill="none"/>
+      </svg>
+
+      <span>Alexandria</span>
+
+      <div id="bus">🚌</div>
+    </div>
+
+    <!-- Story -->
+    <div class="story">
+      <p class="line">250 KM… officially canceled</p>
+      <p class="line">25,000 minutes on FaceTime… and counting</p>
+      <p class="line">Two cities… one decision</p>
+    </div>
+
+    <p class="emotion fade">
+      Between Cairo and Alexandria, Omar found Menna… and never looked back.
+    </p>
+
+    <div class="final">
+      <p class="fade">Finally… same city.</p>
+      <h2 class="glow">Omar ❤️ Menna</h2>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
